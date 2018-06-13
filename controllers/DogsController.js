@@ -40,7 +40,7 @@ module.exports = {
 
   getFilteredDogs: (req, res) => {
     let filteredDogs = dogs.filter((dog) => {
-      return (dog.city === req.params.city && dog.breed === req.params)
+      return (dog.city === req.params.city && dog.breed === req.params.breed)
     })
   
     res.send(filteredDogs)
